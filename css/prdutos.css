@@ -1,0 +1,106 @@
+.PDT{
+    justify-content: center; 
+    align-items: center;    
+    margin: 10px auto;
+    padding: 7px;
+
+
+    border: 2.33px solid black;
+    border-radius: 20px;
+    background-color: #3a3a3a;
+    color: #999797;
+    width: 400px;
+}
+
+ .titulo{
+    text-align: center;
+    color: white;
+    font-family: 'Acme';font-size: 25px 2px;
+ }
+
+.imgpt{
+    border-radius: 15px;
+    border: 3px solid white;
+    width: 250px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.TT{ font-size: 20px;
+    color: white;
+    font-family: 'Acme';font-size: 25px 2px;
+    text-align: center;
+    align-items: center;
+    display: block;
+}
+
+.PÇ{
+    color:#7fff00;
+    text-align: center;
+    align-items: center;
+    display: block;
+}
+
+/*button e animação*/
+
+.container {
+    margin:10px;
+    padding: 2px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+  }
+
+.comprar {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+}
+
+.comprar span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.comprar:hover span {
+    color: black;
+}
+
+.comprar::before,
+.comprar::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.comprar::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.comprar:hover::before {
+    transform: translate3d(100%, 0, 0);
+}

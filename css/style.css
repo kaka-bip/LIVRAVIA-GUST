@@ -25,6 +25,12 @@ header{
 header nav{
     text-align: center;
     align-items: center;
+    transition: 1 ease;
+}
+
+header a:hover{
+    color: aquamarine;
+    transition: 0.8s;
 }
 
 header nav a{
@@ -49,7 +55,57 @@ header nav a{
 
 }
 
+#Procurar{
+    background: orange;
+    padding: 5px;
+    margin: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+   transform: scale(1.0);
+   transition: transforme 0.9s ease;
+}
+
+#Procurar:hover{
+transform: scale(1.1);
+}
+
 header h1{
+    text-align: center;
+    align-items: center;
+}
+
+.SBR{
+    font-family: Arial, Helvetica, sans-serif 24px;
+    color: #220101;
+    background: hwb(0 81% 18%);
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.Mais{
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    border: 3.5px solid black;
+    border-radius: 15px;
+}
+
+.Mais:hover{
+    background-color: #343a40;
+    transition: 0.6s ease;
+}
+
+footer{
+    background: #343a40;
+    color: white;
     text-align: center;
     align-items: center;
 }
